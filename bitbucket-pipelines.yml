@@ -21,3 +21,8 @@ pipelines:
   default:
     - step: *buildTestStep
     - step: *buildSyncStep
+
+  tags:
+    "**":
+      - step: *buildTestStep
+      - step: *buildSyncStep
