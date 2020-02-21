@@ -11,7 +11,7 @@ definitions:
   buildSyncStep: &buildSyncStep
     name: Push to Github
     image:
-      name: fontoxmltoolsinternal.azurecr.io/build-tools/fontoxml-pipeline-push-to-github:test
+      name: fontoxmltoolsinternal.azurecr.io/build-tools/fontoxml-pipeline-push-to-github:latest
       username: $TOOLS_INTERNAL_REGISTRY_USERNAME
       password: $TOOLS_INTERNAL_REGISTRY_PASSWORD
     script:
